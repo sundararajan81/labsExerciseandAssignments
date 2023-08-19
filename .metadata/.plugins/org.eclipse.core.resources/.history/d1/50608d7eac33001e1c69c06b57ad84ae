@@ -1,0 +1,5 @@
+package SeleniumMavenproject.SeleniumMavenproject;
+
+public interface WebDriver {
+
+}

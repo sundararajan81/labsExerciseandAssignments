@@ -1,0 +1,29 @@
+package com.practise.fundamentals;
+
+public class PrimeNumber {
+
+	private static final String Void = null;
+
+	public PrimeNumber() {
+		// TODO Auto-generated constructor stub
+		int a =5;
+		int b =6;
+		int c = a+b;
+		Void display() 
+		{
+			System.out.println(c);)
+		}
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int numCheck;
+		if(numCheck/0)
+		{
+			return false;
+		}
+	}
+
+	
+
+}

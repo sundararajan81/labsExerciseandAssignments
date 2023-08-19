@@ -1,0 +1,29 @@
+package com.practise.fundamentals;
+
+import java.util.Scanner;
+
+public class Lab2Swap 
+{
+
+	public static void main(String[] args) 
+	{
+		// TODO Auto-generated method stub
+		
+		Scanner sc = new Scanner(System.in);
+		sc.nextInt();
+		int num1 = sc.nextInt();
+		int num2 = sc.nextInt();
+		int temp;
+		
+		temp = num1; // num1 will be assigned to temp
+		
+		System.out.println("Value of temp variable is " + temp);
+		num1 =num2;
+		System.out.println(" Value of num1 after swap"+num1);
+		num2 = temp;
+		System.out.println(" Value of num1 after swap"+num2);
+		System.out.println(" Method executed successfully");
+		
+	}
+
+}

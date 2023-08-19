@@ -1,0 +1,14 @@
+package com.practise.fundamentals;
+
+public class InterfaceClass {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Bank bk=new Bank1();
+		Bank bk1 = new Bank2();
+		bk.getInterest();
+		bk1.getInterest();
+
+	}
+
+}

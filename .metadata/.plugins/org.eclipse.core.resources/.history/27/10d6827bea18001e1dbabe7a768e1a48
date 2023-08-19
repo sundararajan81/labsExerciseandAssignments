@@ -1,0 +1,12 @@
+package com.practise.fundamentals;
+
+public class PrimeNumber {
+
+	private static final String Void = null;
+
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+	
+}
+}

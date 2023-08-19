@@ -1,0 +1,30 @@
+package com.practise.fundamentals;
+
+import java.util.Arrays;
+import java.util.Scanner;
+
+public class Anagram {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter the String 1");
+        String str1 = sc.nextLine();
+        System.out.println("Enter the String 2");
+        String str2 = sc.nextLine();
+        char[] char1=str1.toCharArray();
+        char[] char2=str2.toCharArray();
+        Arrays.sort(char1);
+        Arrays.sort(char2);
+        if(str1.length()==str2.length()) {
+
+            if(String.valueOf(char1).equals(String.valueOf(char1)))
+                    System.out.println("String is  an anagram");
+           }
+            else {
+                System.out.println("String is not an anagram");
+               
+            }
+        }
+}

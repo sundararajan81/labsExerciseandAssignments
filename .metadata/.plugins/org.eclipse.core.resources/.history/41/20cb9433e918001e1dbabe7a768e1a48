@@ -1,0 +1,25 @@
+package com.practise.fundamentals;
+
+public class Amstrongnumber {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int input = 343;
+        int temp = input, output = 0, r = 0;
+        while(temp>0) {
+           // r = temp%10;
+            output = (output*output*output) + r;
+            //temp = temp /10;
+        }
+        
+        if(input == output) {
+            System.out.println("input is a polindrome");
+        }else {
+            System.out.println("input is not a polindrome");
+        }
+ 
+    }
+
+	}
+
+

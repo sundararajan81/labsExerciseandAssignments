@@ -1,0 +1,23 @@
+package com.practise.fundamentals;
+
+public class Reversalstring {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		String input = "Hello We are in Training";
+        String[] values = input.split(" ");
+        String output = "";
+        for (int i = 0; i < values.length; i++) {
+            String val = values[i];
+            for (int j = val.length()-1; j >=0; j--) {
+                output = output + val.charAt(j);
+            }
+            output = output + " ";
+        }
+
+        System.out.println("reversing each word in a string "+ output);
+
+	}
+}
+
+

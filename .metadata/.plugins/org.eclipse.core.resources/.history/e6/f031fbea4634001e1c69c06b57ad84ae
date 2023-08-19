@@ -1,0 +1,45 @@
+package SeleniumMavenproject.SeleniumMavenproject;
+
+import java.awt.Desktop.Action;
+import java.io.File;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.support.ui.Select;
+
+public class CommerceSiteScripts 
+{
+
+	public static void main(String[] args) 
+	{
+	
+		WebDriver driver = new ChromeDriver();
+		driver.get("https://demo.nopcommerce.com/");
+		driver.manage().window().maximize();
+
+		/*WebElement selectCurrencyList = driver.findElement(By.xpath("//select[@id='customerCurrency']"));
+		//WebElement selectedCurrency= driver.findElement(By.xpath("//option[contains(text(),'Euro')]"));
+		
+		Actions action = new Actions(driver);
+		WebElement currencyList =driver.findElement(By.xpath("/html/body/div[6]/div[1]/div[1]/div[1]/div/select/option[2]"));
+		action.moveToElement(currencyList).click().perform();
+		*/
+		
+		WebElement search = driver.findElement(By.xpath("//*[@id=\"small-searchterms\"]"));
+		search.sendKeys("Build your own computer");
+		search.submit();
+		
+		WebElement price = driver.findElement(By.xpath("//span[contains(text(),'$1,200.00')]"));
+		
+		System.out.println(price.getText());
+
+				
+	}
+
+}

@@ -1,0 +1,19 @@
+package com.practise.fundamentals;
+
+public class RelationalOperator {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+ 
+        char input = 'f';
+
+	        if (input == 'a' || input == 'A' || input == 'e' || input == 'E' || input == 'i' || input == 'I' || input == 'o'
+	                || input == 'O' || input == 'u' || input == 'U') {
+	            System.out.println(input + " is a vowel");
+	        } else {
+	            System.out.println("character is consonant");
+	        }
+	    }
+	
+	  	
+}

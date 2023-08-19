@@ -1,0 +1,27 @@
+package com.practise.fundamentals;
+
+import java.util.Scanner;
+
+public class Lab1division {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+	System.out.println(" Get the numbers");
+	Scanner sc = new Scanner(System.in);
+	int input1 =sc.nextInt();
+	int input2=sc.nextInt();
+	
+	System.out.println("Enter the number1"+ input1);
+	System.out.println("Enter the number1"+ input2);
+
+	int quotient = input1 / input2;
+	int remainder = input1 % input2;
+	
+	System.out.println("quotient of 2 numbers"+ quotient);
+	System.out.println("Remainder of 2 numbers"+ quotient);
+
+
+	}
+
+}

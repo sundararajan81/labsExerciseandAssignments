@@ -1,0 +1,25 @@
+package com.practise.fundamentals;
+
+import java.util.Scanner;
+
+public class Lab1Rectangle {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int length =12;
+		int breadth =14;
+		int area;
+		int permiter;
+		
+		/* sc = new Scanner(System.in);
+		sc.nextInt();*/
+		System.out.println(" Area of the rectangle is ....."+ length*breadth);
+		System.out.println(" Permiter of the rectangle is ...."+ 2( length +breadth));
+		
+		
+	
+	
+
+	}
+
+}

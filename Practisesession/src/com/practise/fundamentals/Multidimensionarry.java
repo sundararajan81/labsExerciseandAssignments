@@ -1,0 +1,38 @@
+package com.practise.fundamentals;
+
+import java.util.Scanner;
+
+public class Multidimensionarry {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		 int[][] studentMarks = new int[6][6];
+	        int[] studentsTotal = new int[6];
+	        Scanner sc = new Scanner(System.in);
+	        for (int i = 0; i < studentMarks.length; i++) {
+	            for (int j = 0; j < studentMarks.length; j++) {
+	                System.out.println("Enter " + (i + 1) + " student subject " + (j + 1) + " marks : ");
+	                studentMarks[i][j] = sc.nextInt();
+	                studentsTotal[i] = studentsTotal[i] + studentMarks[i][j];
+	            }
+	        }
+	 
+	        for (int i = 0; i < studentsTotal.length; i++) {
+	            System.out.println("Student " + (i + 1) + " total marks : " + studentsTotal[i]);
+	        }
+	    
+	
+	 int n=50;
+	 int i =1;
+	 while(i<= n){
+			
+		 if(i%2==1) 
+		 {
+		 System.out.println(i+" ");
+		
+	 }
+		 i++;
+	 }
+}
+}
+

@@ -1,0 +1,28 @@
+package com.practise.fundamentals;
+
+public class Property {
+
+	int numGears;
+	int numSeats;
+	String owner;
+	int costCar;
+	static String carName;
+	
+	public void printProperty() {
+		
+	}
+	
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Property carName = new Property();
+		carName.numGears=4;
+		carName.numSeats=5;
+		carName.owner = "Sundar";
+		carName.costCar =1500;
+		System.out.println(carName.carName);
+		
+
+	}
+
+}

@@ -1,0 +1,21 @@
+package com.practise.fundamentals;
+
+import java.util.Scanner;
+
+public class Multidimensionarry {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int[][] studentId =new int[6][6];
+		Scanner sc = new Scanner(System.in);
+				
+					for(int i=0;i<studentId.length;i++) {
+						for(int j=0;j<studentId.length;j++)
+						{
+							sc.nextInt();
+						}
+					}
+				}
+	}
+
+

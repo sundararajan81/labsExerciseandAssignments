@@ -1,0 +1,95 @@
+package SeleniumMavenproject.SeleniumMavenproject;
+import java.io.File;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.ui.Select;
+
+public class guru99Scripts {
+
+	public static void main(String[] args) throws InterruptedException 
+	{
+		
+		WebDriver driver = new ChromeDriver();
+		driver.get("https://www.demo.guru99.com/insurance/v1/register.php");
+		driver.manage().window().maximize();
+
+		
+		WebElement titleList = driver.findElement(By.id("user_title"));
+		Select titleList1 = new Select(titleList);
+		titleList1.selectByVisibleText("Mr");
+		
+		WebElement firstName = driver.findElement(By.id("user_firstname"));
+		firstName.sendKeys("Sundararajan");
+		
+		WebElement surName =driver.findElement(By.id("user_surname"));
+		surName.sendKeys("Thangaraj");
+		
+		WebElement phoneNumber = driver.findElement(By.id("user_phone"));
+		phoneNumber.sendKeys("+18628121950");
+		
+		WebElement yearToChoose = driver.findElement(By.name("year"));
+		Select year = new Select(yearToChoose);
+		year.selectByVisibleText("1982");
+		
+		WebElement monthToChoose = driver.findElement(By.name("month"));
+		Select month = new Select(monthToChoose);
+		year.selectByVisibleText("September");
+		
+		WebElement dateToChoose = driver.findElement(By.name("date"));
+		Select date = new Select(dateToChoose);
+		year.selectByVisibleText("27");
+		
+		//driver.close();
+		
+		/*WebElement occupation = driver.findElement(By.id("user_occupation_id"));
+		Select occupationList = new Select(occupation);
+		System.out.println(occupationList.getOptions());
+		occupationList.selectByValue("Doctor");
+		
+						
+		WebElement radioButton=driver.findElement(By.id("licencetype_t"));
+		radioButton.click();
+					
+		WebElement licenceNotice=driver.findElement(By.id("user_licenceperiod"));
+		Select selLicencePeriod = new Select(licenceNotice);
+		selLicencePeriod.selectByVisibleText("2");
+		
+		WebElement addressStreet=driver.findElement(By.id("user_address_attributes_street"));
+		addressStreet.sendKeys("9301 Spectrum drive");
+		
+		WebElement addressCity=driver.findElement(By.id("user_address_attributes_city"));
+		addressCity.sendKeys("Austin");
+		
+		WebElement addressCounty=driver.findElement(By.id("user_address_attributes_county"));
+		addressCounty.sendKeys("Williamson county");
+		
+		WebElement addressPostalCode=driver.findElement(By.id("user_address_attributes_postcode"));
+		addressPostalCode.sendKeys("78717");
+		
+		WebElement emailID=driver.findElement(By.xpath("//input[@id='user_user_detail_attributes_email']"));
+		emailID.sendKeys("thangaraj.sunn@gmail.com");
+				
+		WebElement password1=driver.findElement(By.xpath("//input[@id='user_user_detail_attributes_password']"));
+		password1.sendKeys("Raj@797");
+				
+		WebElement passwordConfirmation=driver.findElement(By.xpath("//input[@id='user_user_detail_attributes_password_confirmation']"));
+		passwordConfirmation.sendKeys("Raj@797");
+		
+		WebElement resetForm =driver.findElement(By.xpath("//input[@id=\"resetform\"]"));
+		resetForm.click();
+		
+		WebElement createForm=driver.findElement(By.xpath("//input[@name=\"submit\"]"));
+		createForm.click();
+				
+		driver.close();
+		*/		
+
+	}
+
+}
